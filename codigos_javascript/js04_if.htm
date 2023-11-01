@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js04.htm - if</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8"/>
+</head>
+
+<body>
+	
+	<script language="JavaScript">
+	/* Objetivo: Ler dois valores, independente da ordem em que foram digitados, apresentá-los em ordem crescente.
+	Será necessárioefetuar a troca de valores, por isso, recomendamos definir uma terceira variável.
+	*/
+	/* Definição de variáveis */ 
+	var js_n1;
+	var js_n2;
+	var js_n3;
+		
+	js_n1 = parseInt(window.prompt('Entre com o primeiro valor: ', '00'));
+	js_n2 = parseInt(window.prompt('Entre com o segundo valor: ', '00'));
+	/* Saída de Dados sem Classificação */
+	document.write('Primeiro numero digitado: ' + js_n1);	
+	document.write('<p>Segundo numero digitado: ' + js_n2);
+	
+	if (js_n1 > js_n2){
+		js_n3 = js_n1;
+		js_n1 = js_n2;
+		js_n2 = js_n3;
+	}	
+		
+	document.write('<p><b>Classificacao em Ordem Crescente:</b> ' + js_n1 + ' e ' + js_n2);
+
+	</script>
+	
+</body>
+</html>
